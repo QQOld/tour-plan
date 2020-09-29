@@ -348,7 +348,7 @@ template {
 
 body {
   font-family: 'Mulish', sans-serif;
-  background-color: #F5FAFE;
+  background-color: #ffffff;
   color: #333333;
 }
 
@@ -737,11 +737,11 @@ img {
 
 .slider-button--next {
   right: 18px;
-  background-image: url(../img/arrow-next);
+  background-image: url(../img/arrow-next.svg);
 }
 
 .slider-button--prev {
   left: 18px;
-  background-image: url(../img/arrow-prev);
+  background-image: url(../img/arrow-prev.svg);
 }
 /*# sourceMappingURL=style.css.map */
