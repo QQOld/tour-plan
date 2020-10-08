@@ -348,7 +348,7 @@ template {
 
 body {
   font-family: 'Mulish', sans-serif;
-  background-color: #F5FAFE;
+  background-color: #ffffff;
   color: #333333;
 }
 
@@ -1337,6 +1337,11 @@ img {
   line-height: 15px;
 }
 
+.footer__bottom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__partners {
   width: 136px;
   height: 22px;
@@ -1430,25 +1435,34 @@ img {
     height: 250px;
   }
   .footer-wrapper {
-    -ms-grid-columns: (fr)[6];
-        grid-template-columns: repeat(6, fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
+    grid-auto-rows: minmax(115px, -webkit-max-content);
+    grid-auto-rows: minmax(115px, max-content);
   }
   .footer__input {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
-  .footer_logo {
+  .footer__logo {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    grid-column: span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .footer__social-network {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    grid-column: span 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3 / span 3;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1461,19 +1475,38 @@ img {
   }
   .footer__legal {
     grid-column: span 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
   }
   .footer__additional {
     grid-column: span 2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
   }
-  .footer_contact-details {
-    grid-column: span 5;
+  .footer__contact-details {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
     -ms-grid-row: 3;
-    grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
   }
-  .footer_contact-form {
-    grid-column: span 5;
+  .footer__contact-form {
     -ms-grid-row: 4;
-    grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    grid-column: span 5;
+  }
+  .footer__bottom {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -1656,6 +1689,9 @@ img {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__bottom {
+    width: 100%;
   }
 }
 

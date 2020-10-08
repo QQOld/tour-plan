@@ -454,19 +454,19 @@ quest" class="card__image">
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+            <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
+            <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
+            <textarea name="message" class="footer__message" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
         <div class="footer__bottom bottom">
           <div class="footer__bottom-text">
-            <span class="footer__bottom-item">Disclaimer</span>
-            <span class="footer__bottom-item">Conditions of use</span>
-            <span class="footer__bottom-item">Cancellation policy</span>
+            <a href='#' class="footer__bottom-link">Disclaimer</a>
+            <a href='#' class="footer__bottom-link">Conditions of use</a>
+            <a href='#' class="footer__bottom-link">Cancellation policy</a>
           </div>
           <div class="bottom__icons">
             <img src="img/partners.png" alt="" class="footer__partners">
