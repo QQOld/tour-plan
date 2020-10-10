@@ -55,8 +55,8 @@ $('.form').each(function() {
       minlength: "Name must be at least 2 letters long",
     },
     email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      required: "Enter your email address",
+      email: "Format - name@domain.com",
     },
     phone: {
       required: "Телефон обязателен"
@@ -64,10 +64,7 @@ $('.form').each(function() {
   },
 });
 });
-AOS.init({
-  disable: function () {
-    var maxWidth = 576;
-    return window.innerWidth < maxWidth;
-  }
-});
+AOS.init({disable: 'mobile'});
+
+$('.phone').mask('+7(000)000-00-00');
 });

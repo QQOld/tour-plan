@@ -14,6 +14,8 @@
     height: 230px
   .footer
     &__input
+      &-wrapper
+        flex-wrap: wrap
       &-group
         flex-basis: 100%
 @media (max-width: 992px)
@@ -21,7 +23,8 @@
   .newsletter-wrapper
     max-width: 700px
   .logo
-    width: 132px
+    &-link
+      width: 132px
   .navbar
     &-top
       padding-top: 30px
@@ -71,9 +74,10 @@
       &-group
         flex-basis: 49%
     &__logo
-      grid-row: 1 / 2
-      grid-column: 1 / 2
-      align-self: center
+      &-link
+        grid-row: 1 / 2
+        grid-column: 1 / 2
+        align-self: center
     &__social
       &-network
         grid-row: 1 / 2
@@ -196,10 +200,11 @@
     width: 100%
   .newsletter
     &-wrapper
-      max-width: 576px
-      width: 92%
+      width: 350px
       flex-direction: column
       align-items: center
+    &__title
+      align-self: start
   .reviews
     &__title
       font-size: 30px
@@ -234,8 +239,9 @@
     &__bottom
       width: 100%
     &__logo
-      grid-row: 1 / 2
-      grid-column: 1
+      &-link
+        grid-row: 1 / 2
+        grid-column: 1
     &__social
       &-network
         grid-row: 2 / 3
@@ -261,7 +267,8 @@
       grid-column: 1
 @media (max-width: 576px)
   .logo
-    width: 99px
+    &-link
+      width: 99px
   .hotel
     &__slider
       margin-bottom: 20px
@@ -271,8 +278,10 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+    &-wrapper
+      max-width: 300px
   .subscribe
-    width: 100%
+    max-width: 300px
   .reviews
     &__title
       font-size: 18px
@@ -284,8 +293,9 @@
     &-wrapper
       grid-template-columns: 1fr
     &__logo
-      grid-row: 1
-      grid-column: 1
+      &-link
+        grid-row: 1
+        grid-column: 1
     &__social
       &-network
         grid-row: 2
@@ -310,3 +320,74 @@
       flex-wrap: wrap
       &-text
         flex-basis: 100%
+@media (max-width: 320px)
+  &-menu
+    padding-left: 30px
+    padding-right: 30px
+    &__search
+      &--mobile
+        &--visible
+          max-width: 245px
+  .newsletter
+    &-wrapper
+      max-width: 280px
+    &__subscribe
+      max-width: 280px
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+      padding-left: 38px
+      padding-right: 38px
+  .footer
+    &__logo
+      &-link
+        order: 1
+    &__social
+      &-network
+        order: 2
+        flex-wrap: wrap
+        align-content: space-between
+      &-links
+        flex-basis: 100%
+        justify-content: flex-start
+        margin-top: 20px
+        margin-bottom: 0
+    &__legal
+      grid-row: 3 / 4
+      margin-top: 0
+    &__additional
+      grid-row: 4 / 5
+    &__categories
+      grid-row: 5 / 6
+    &__link
+      margin-right: 10px
+    &__input
+      &-group
+        order: 1
+    &__message
+      order: 2
+    &__button
+      order: 4
+    &__info
+      order: 3
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__bottom
+      align-items: center
+      max-height: 47px
+      align-content: space-between
+  .modal
+    &__dialog
+      min-width: 300px
+      padding: 33px 30px
+    &__input
+      order: 1
+    &__message
+      order: 2
+    &__button
+      order: 4
+    &__info
+      order: 3
+      flex-basis: 100%
+      margin-top: 10px
