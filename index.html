@@ -275,10 +275,7 @@
               Very, very great quality! Very effective packaging. Swift delivery. Recommended.
               Item is of good quality. The packaging was very, very effective. Quick delivery.
               Quality of item was splendid! The packaging was immensely neat. Speedy delivery.
-              Quality of item was splendid. Fantastic delivery. Ever so magnificent packaging.
-              Superior quality. Quality of the wrapping was high-standard. Excellent delivery.
-              Item was of high-standard quality. Notably marvellous packaging. Speedy to send.
-              Item good. Delightful packaging. First-rate delivery. An immensely great seller.
+              Quality of item was splendid. Fantastic delivery. 
               </p>
             </div>
             <!-- /.reviews-slider__item -->
@@ -309,9 +306,7 @@
               Ever so splendid quality. Superior packaging. Quick to send.
               The item was good! Ideal packaging. Notably speedy delivery.
               Quality of item was good! Superior packaging. Quick to send.
-              High-standard quality. Outstanding packaging. Good delivery.
-              Item is of superior quality. Ideal packaging. Good delivery.
-              </p>
+              High-standard quality.
             </div>
             <!-- /.reviews-slider__item -->
           </div>
@@ -437,9 +432,11 @@ quest" class="card__image">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
+              <div class="footer__phones-wrapper">
+              <p class="footer__phones">Tel (business hours) : <a href="tel:269 1500">269 1500</a></p> 
+              <p class="footer__phones">Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38">>52-56-61-38</a> (08:00&nbsp;am – 20:00&nbsp;pm)</p> 
+              <p class="footer__phones">Tel (hotline) Sunday: <a href="tel:52-56-61-38">52-56-61-38</a> (08:00&nbsp;am – 14:00&nbsp;pm)</p>
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
@@ -458,7 +455,7 @@ quest" class="card__image">
               <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" minlength="2" required>
               </div>
               <div class="footer__input-group">
-                <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*" required>
+                <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*" required>
               </div>
               </div>
             <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
@@ -491,7 +488,7 @@ quest" class="card__image">
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" minlength="2" required>
-        <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*" required>
+        <input name="phone" type="tel" class="input modal__input phone" placeholder="Phone Number*" required>
         <input name="email" type="email" class="input modal__input" placeholder="Email*" required>
         <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
         <button class="button modal__button" type="submit">Send</button>

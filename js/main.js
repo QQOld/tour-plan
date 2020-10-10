@@ -59,7 +59,7 @@ $('.form').each(function() {
       email: "Format - name@domain.com",
     },
     phone: {
-      required: "Телефон обязателен"
+      required: " Phone is required"
     },
   },
 });
