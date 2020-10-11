@@ -127,7 +127,7 @@
     <!-- /.container -->
   </section>
 
-  <footer class="footer">
+    <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
         <a href="index.html" class="logo-link footer__logo-link"><img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo"></a>
@@ -200,9 +200,11 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/contact-phone-call.svg" alt="">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
+              <div class="footer__phones-wrapper">
+              <p class="footer__phones">Tel (business hours) : <a href="tel:269 1500">269 1500</a></p> 
+              <p class="footer__phones">Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38">>52-56-61-38</a> (08:00&nbsp;am – 20:00&nbsp;pm)</p> 
+              <p class="footer__phones">Tel (hotline) Sunday: <a href="tel:52-56-61-38">52-56-61-38</a> (08:00&nbsp;am – 14:00&nbsp;pm)</p>
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
@@ -216,12 +218,14 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
           <form action="send.php" method="POST" class="form footer__form">
-            <div class="footer__input-group">
+            <div class="footer__input-wrapper">
+               <div class="footer__input-group">
               <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*" minlength="2" required>
-            </div>
-            <div class="footer__input-group">
-              <input name="phone" type="tel" class="input footer__input" placeholder="Phone Number*" required>
-            </div>
+              </div>
+              <div class="footer__input-group">
+                <input name="phone" type="tel" class="input footer__input phone" placeholder="Phone Number*" required>
+              </div>
+              </div>
             <textarea name="message" class="message footer__message" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -252,7 +256,7 @@
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input name="name" type="text" class="input modal__input" placeholder="Your Full Name*" minlength="2" required>
-        <input name="phone" type="tel" class="input modal__input" placeholder="Phone Number*" required>
+        <input name="phone" type="tel" class="input modal__input phone" placeholder="Phone Number*" required>
         <input name="email" type="email" class="input modal__input" placeholder="Email*" required>
         <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
@@ -266,7 +270,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
